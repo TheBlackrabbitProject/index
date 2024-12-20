@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'BIOS';
+    /* Use a relative path to the local font file in `url()`. */
+    src: url('./Web437_IBM_MDA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    /* Use a relative path to the local font file in `url()`. */
+    src: url('./JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
