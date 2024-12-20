@@ -1,11 +1,11 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: The Blackrabbit Project
+description: Your favorite index of Five Night's at Freddy's™️ Fangames
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Your favorite index of Five Night's at Freddy's&#8482; Fangames
   image:
-    file: ../../assets/full-light.png
+      file: ../../assets/full-light.png
   actions:
     - text: Start Browsing
       link: /about/welcome
@@ -15,24 +15,31 @@ hero:
       icon: external
       variant: minimal
 ---
+import { Card, CardGrid, Aside, LinkCard } from '@astrojs/starlight/components';
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
-
-
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+	<Card title="User Friendly Interface" icon="open-book">
+    	Interesting content you want to highlight.
+  	</Card>
+	<Card title="Open Source" icon="open-book">
+    	Interesting content you want to highlight.
+ 	</Card>
 </CardGrid>
 
+<CardGrid>
+  <LinkCard title="Welcome" href="/about/welcome" />
+  <LinkCard title="How to Contribute" href="/contributing/how-to-build" />
+  <LinkCard title="About Us" href="/about/about-us" />
+  <LinkCard title="Contributing Guidelines" href="/contributing/contribution-guidelines" />
+</CardGrid>
+
+
+
+<LinkCard
+  title="Discord"
+  icon="discord"
+  href="https://discord.gg/XWvga9sB"
+  description="Our official Discord server"
+/>
+
+<Aside type="caution">POPGOES' Blackrabbit and Five Night's at Freddy's are intellectual properties of respectively Kane Carter and Scott Cawthon. We are not related to them in any way.</Aside>

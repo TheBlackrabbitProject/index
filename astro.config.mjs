@@ -12,12 +12,18 @@ export default defineConfig({
           title: 'The Blackrabbit Project',
           plugins: [starlightBlog()],
           social: {
-              github: 'https://github.com/withastro/starlight',
+              github: 'https://github.com/TheBlackrabbitProject',
+			  discord: 'https://discord.gg/XWvga9sB',
           },
+		  pagination: false,
+		  editLink: {
+			baseUrl: 'https://github.com/TheBlackrabbitProject/index/tree/main',
+		  },
 		  favicon: '/favicon.ico',
 		  logo: {
 			light: './src/assets/branding/no bg/icon-dark.png',
     		dark: './src/assets/branding/no bg/icon-light.png',
+			replacesTitle: true,
 		  },
 		  head: [
 			// Add ICO favicon fallback for Safari.

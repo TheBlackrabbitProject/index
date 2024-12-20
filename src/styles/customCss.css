@@ -35,3 +35,17 @@
 main {
 	font-family: 'BIOS', sans-serif;
 }
+
+.sl-link-button {
+	font-family: 'JetBrainsMono', sans-serif;
+	align-items: center;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	display: inline-flex;
+	font-size: var(--sl-text-sm);
+	gap: 0.5em;
+	line-height: 1.1875;
+	outline-offset: 0.25rem;
+	padding: 0.4375rem 1.125rem;
+	text-decoration: none;
+}
