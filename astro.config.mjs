@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 
 import netlify from '@astrojs/netlify';
+import { AstroJSX } from 'astro/jsx-runtime';
 
 // https://astro.build/config
 export default defineConfig({
@@ -85,6 +86,38 @@ export default defineConfig({
                   label: 'Contributing',
                   autogenerate: { directory: 'contributing' },
               },
+			  {
+				label: 'Fangames',
+				items: [
+					{
+						label: "Five Nights at Candy's",
+						items: [
+							{ label: "Five Night's at Candy's 1", slug: 'fangames/five-nights-at-candys/1' },
+							{ label: "Five Night's at Candy's 2", slug: 'fangames/five-nights-at-candys/2' },
+							{ label: "Five Night's at Candy's 3", slug: 'fangames/five-nights-at-candys/3' },
+							{ label: "Five Night's at Candy's 4", slug: 'fangames/five-nights-at-candys/4', badge: 'Fanverse', },
+						]
+					},
+					{
+						label: "One Night at Flumpty's",
+						items: [
+							{ label: "One Night at Flumpty's", slug: 'fangames/one-night-at-flumptys/1' },
+							{ label: "One Night at Flumpty's 2", slug: 'fangames/one-night-at-flumptys/2' },
+							{ label: "One Night at Flumpty's 3", slug: 'fangames/one-night-at-flumptys/3', badge: 'Fanverse', },
+						]
+					},
+					{
+						label: "POPGOES",
+						items: [
+							{ label: "POPGOES(2016)", slug: 'fangames/popgoes/1' },
+							{ label: "POPGOES Arcade", slug: 'fangames/popgoes/arcade', badge: 'Fanverse', },
+							{ label: "POPGOES Evergreen", slug: 'fangames/popgoes/evergreen', badge: 'Fanverse', },
+						]
+					},
+				],
+				
+				
+			},
           ],
           customCss: [
               './src/styles/customCss.css',
